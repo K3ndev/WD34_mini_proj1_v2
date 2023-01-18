@@ -1,0 +1,158 @@
+/* all css classes start 'ut' in utilities file */
+
+/* start */
+/* position breakpoints */
+/* default, md, lg */
+/* static, relative, absolute,   */
+/* md */
+@media (min-width: 768px) {
+  .ut-position-md-static {
+    position: static;
+  }
+  .ut-position-md-relative {
+    position: relative;
+  }
+  .ut-position-md-absolute {
+    position: absolute;
+  }
+}
+/* lg */
+@media (min-width: 992px) {
+  .ut-position-lg-static {
+    position: static;
+  }
+  .ut-position-lg-relative {
+    position: relative;
+  }
+  .ut-position-lg-absolute {
+    position: absolute;
+  }
+}
+/* end */
+
+/* start */
+/* z-index */
+.ut-z-index-10 {
+  z-index: 10;
+}
+.ut-z-index-20 {
+  z-index: 20;
+}
+.ut-z-index-30 {
+  z-index: 30;
+}
+.ut-z-index-40 {
+  z-index: 40;
+}
+.ut-z-index-50 {
+  z-index: 50;
+}
+/* end */
+/* start */
+/* gap 6 to 10 */
+.ut-gap-6 {
+  gap: 1.5rem;
+}
+.ut-gap-7 {
+  gap: 1.75rem;
+}
+.ut-gap-8 {
+  gap: 2rem;
+}
+.ut-gap-9 {
+  gap: 2.25rem;
+}
+.ut-gap-10 {
+  gap: 2.5rem;
+}
+/* end */
+/* start */
+/* margin bottom*/
+.ut-mb-6 {
+  margin-bottom: 1.5rem;
+}
+.ut-mb-7 {
+  margin-bottom: 1.75rem;
+}
+.ut-mb-8 {
+  margin-bottom: 2rem;
+}
+.ut-mb-9 {
+  margin-bottom: 2.25rem;
+}
+.ut-mb-10 {
+  margin-bottom: 2.5rem;
+}
+/* end */
+/* start */
+/* color pallette */
+/* bg color*/
+.ut-bg-white-paper {
+  background-color: #eae8e72d;
+}
+.ut-bg-neutral-brown {
+  background-color: #87806c;
+}
+.ut-bg-neutral-brown-light {
+  background-color: #9c9686;
+}
+.ut-bg-dark-brown {
+  background-color: #523a1d;
+}
+.ut-bg-light-brown {
+  background-color: #906e4e;
+}
+/* text color*/
+.ut-text-neutral-brown {
+  color: #87806c;
+}
+.ut-text-dark-brown {
+  color: #523a1d;
+}
+.ut-text-light-brown {
+  color: #906e4e;
+}
+.ut-text-shadow-white {
+  color: #808080;
+}
+.ut-text-shadow-white-hover:hover {
+  color: #cfcfcf;
+}
+/* end */
+/* start */
+/* cursor pointer */
+.ut-cursor-pointer {
+  cursor: pointer;
+}
+/* end */
+/* start */
+/* no select */
+.ut-no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome, Edge, Opera and Firefox */
+}
+/* end */
+/* start */
+/* vertical text*/
+.ut-text-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+/* end */
+/* start */
+/* simple animation */
+.ut-hover-scale-12:hover {
+  transform: scale(1.2);
+}
+/* end */
+/* start */
+/* aspect ratio */
+.ut-aspect-ratio-9x16 {
+  aspect-ratio: 9 / 16;
+}
+/* end */

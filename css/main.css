@@ -1,0 +1,25 @@
+/* bootstrap */
+@import url("./vendor/bootstrap/css/bootstrap.css");
+
+/* reset bootstrap */
+@import url("./base/reset_bootstrap.css");
+
+/* layout */
+@import url("./layout/root.css");
+
+/* utilities */
+@import url("./utilities/root.css");
+
+/* components */
+@import url("./components/header.css");
+@import url("./components/buttons.css");
+@import url("./components/footer.css");
+
+/* pages */
+@import url("./page/home.css");
+
+/* reset */
+@import url("./base/reset.css");
+
+/* typography */
+@import url("./base/typography.css");

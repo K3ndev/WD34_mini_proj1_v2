@@ -1,0 +1,68 @@
+/* please start header- */
+/* start */
+/* for galaxy fold 348px to 280px */
+.header-galaxyF-display {
+  display: none !important;
+}
+.header-galaxyF-margin {
+  margin: 8px !important;
+}
+/* custom display for galaxy fold display */
+@media (min-width: 349px) {
+  .header-galaxyF-display {
+    display: block !important;
+  }
+  .header-galaxyF-margin {
+    margin-bottom: 0px !important;
+  }
+}
+/* end */
+/* start */
+/* link animation when hover */
+.header-link-animation::before {
+  transition: 300ms;
+  height: 4px;
+  content: "";
+  position: absolute;
+  background-color: #523a1d;
+
+  width: 0%;
+  bottom: 3px;
+}
+
+.header-link-animation:hover::before {
+  width: 100%;
+}
+
+.header-link-animation:hover {
+  color: #523a1d !important;
+}
+
+.header-link-active::before {
+  transition: 300ms;
+  height: 4px;
+  content: "";
+  position: absolute;
+  background-color: #523a1d;
+
+  width: 100%;
+  bottom: 3px;
+}
+
+.header-link-active {
+  color: #523a1d !important;
+}
+/* end */
+
+/* start */
+/* border remove*/
+/* md */
+@media (min-width: 768px) {
+  .header-border-md-top-0 {
+    border-top: 0px !important;
+  }
+}
+/* end */
+.header-w-100 {
+  width: 6.25rem;
+}

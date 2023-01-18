@@ -1,0 +1,15 @@
+/* bootstrap checkbox */
+input[type="checkbox"]:checked {
+  background-color: #87806c;
+  border-color: #523a1d;
+}
+
+/* bootstrap select */
+/* in firefox its blue */
+option {
+  background-color: white;
+}
+
+select {
+  background-color: #eae8e72d;
+}
