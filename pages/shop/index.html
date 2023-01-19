@@ -136,7 +136,950 @@
         </div>
       </nav>
     </header>
-    <main>shop</main>
+    <main class="layout-flex-1 container-xl">
+      <section class="mt-4 mt-md-5">
+        <!-- default, d-lg-none -->
+        <div class="d-flex w-100 justify-content-between d-xl-none">
+          <div class="d-flex gap-1 gap-sm-2 cursor-pointer">
+            <i class="bi bi-sliders"></i>
+            <p>Filter</p>
+          </div>
+
+          <div class="d-flex gap-1 gap-sm-2">
+            <label for="cars" class="d-block">Sort by </label>
+            <select name="sortBy" id="sortBy" class="cursor-pointer">
+              <option value="featured">Featured</option>
+              <option value="best-selling">Best selling</option>
+              <option value="created-ascending">Old to new</option>
+              <option value="created-descending">New to old</option>
+              <option value="price-ascending">Price, lowest first</option>
+              <option value="price-descending">Price, highest first</option>
+              <option value="title-ascending">Product, A-Z</option>
+              <option value="title-descending">Product, Z-A</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- lg -->
+        <div class="d-lg-flex gap-5">
+          <!-- 1 -->
+          <div
+            class="d-none d-xl-block shop-w-30 ut-bg-white-paper px-4 py-5 ut-h-fit-content custom-radius-lg shop-options-border"
+          >
+            <!-- search -->
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control text-black"
+                placeholder="Tittle, Genre..."
+                aria-label="Search"
+                aria-describedby="basic-addon1"
+              />
+              <span
+                class="input-group-text bg-white ut-cursor-pointer"
+                id="basic-addon1"
+                ><i class="bi bi-search bg-white"></i
+              ></span>
+            </div>
+
+            <!-- Genre -->
+            <div>
+              <!-- popular Genre -->
+              <div class="pt-5">
+                <h3 class="fs-5 mb-1">Popular Search</h3>
+                <p
+                  class="fs-6 ut-cursor-pointer text-secondary shop-text-option w-fit-content"
+                >
+                  Atomic Habits
+                </p>
+                <p
+                  class="fs-6 ut-cursor-pointer text-secondary shop-text-option w-fit-content"
+                >
+                  Romance
+                </p>
+                <p
+                  class="fs-6 ut-cursor-pointer text-secondary shop-text-option w-fit-content"
+                >
+                  Duke of Sussex
+                </p>
+                <p
+                  class="fs-6 ut-cursor-pointer text-secondary shop-text-option w-fit-content"
+                >
+                  Business
+                </p>
+              </div>
+
+              <!-- Genre -->
+              <div class="pt-5">
+                <h3 class="fs-5 mb-1">Genre</h3>
+
+                <!-- 1 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="adventure_stories"
+                    id="flexCheckDefault"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault"
+                  >
+                    Adventure stories
+                  </label>
+                </div>
+
+                <!-- 2 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="classics"
+                    id="flexCheckDefault1"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault1"
+                    >Classics</label
+                  >
+                </div>
+
+                <!-- 3 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="crime"
+                    id="flexCheckDefault2"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault2"
+                    >Crime</label
+                  >
+                </div>
+
+                <!-- 4 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="folk_tales"
+                    id="flexCheckDefault3"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault3"
+                    >Fairy tales, and folk tales</label
+                  >
+                </div>
+
+                <!-- 5 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="fantasy"
+                    id="flexCheckDefault4"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault4"
+                    >Fantasy</label
+                  >
+                </div>
+
+                <!-- 6 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="historical_fiction"
+                    id="flexCheckDefault5"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault5"
+                    >Historical Fiction</label
+                  >
+                </div>
+
+                <!-- 7 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="horror"
+                    id="flexCheckDefault6"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault6"
+                    >Horror</label
+                  >
+                </div>
+
+                <!-- 8 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="humour_and_satire"
+                    id="flexCheckDefault7"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault7"
+                    >Humour and satire</label
+                  >
+                </div>
+
+                <!-- 9 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="literary_fiction"
+                    id="flexCheckDefault8"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault8"
+                    >Literary fiction</label
+                  >
+                </div>
+
+                <!-- 10 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="mystery"
+                    id="flexCheckDefault9"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault9"
+                    >Mystery</label
+                  >
+                </div>
+
+                <!-- 11 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="poetry"
+                    id="flexCheckDefault10"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault10"
+                    >Poetry</label
+                  >
+                </div>
+
+                <!-- 12 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="plays"
+                    id="flexCheckDefault11"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault11"
+                    >Plays</label
+                  >
+                </div>
+
+                <!-- 13 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="romance"
+                    id="flexCheckDefault12"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault12"
+                    >Romance</label
+                  >
+                </div>
+
+                <!-- 14 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="science_fiction"
+                    id="flexCheckDefault13"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault13"
+                    >Science fiction</label
+                  >
+                </div>
+
+                <!-- 15 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="short_stories_and_novellas"
+                    id="flexCheckDefault14"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault14"
+                    >Short stories & novellas</label
+                  >
+                </div>
+
+                <!-- 16 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="thrillers"
+                    id="flexCheckDefault15"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault15"
+                    >Thrillers</label
+                  >
+                </div>
+
+                <!-- 17 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="war"
+                    id="flexCheckDefault16"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault16"
+                    >War</label
+                  >
+                </div>
+
+                <!-- 18 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="women_fiction"
+                    id="flexCheckDefault17"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault17"
+                    >Women&#96;s fiction</label
+                  >
+                </div>
+
+                <!-- 19 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="young_adult_fiction"
+                    id="flexCheckDefault18"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault18"
+                    >Young adult fiction</label
+                  >
+                </div>
+
+                <!-- 20 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="autobiography_and_memoir"
+                    id="flexCheckDefault19"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault19"
+                    >Autobiography</label
+                  >
+                </div>
+
+                <!-- 21 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="biography"
+                    id="flexCheckDefault20"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault20"
+                    >Biography</label
+                  >
+                </div>
+
+                <!-- 22 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="essays"
+                    id="flexCheckDefault21"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault21"
+                    >Essays</label
+                  >
+                </div>
+
+                <!-- 23 -->
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="self_help_books"
+                    id="flexCheckDefault22"
+                  />
+                  <label
+                    class="form-check-label fs-6 text-secondary ut-cursor-pointer shop-text-option"
+                    for="flexCheckDefault22"
+                    >Self-help books</label
+                  >
+                </div>
+              </div>
+
+              <!-- price -->
+              <div class="pt-5">
+                <h3 class="fs-5 mb-1">Price</h3>
+
+                <div class="d-flex gap-3">
+                  <div class="input-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-label="Amount (to the nearest dollar)"
+                      placeholder="From"
+                      min="0"
+                    />
+                  </div>
+                  <div class="input-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-label="Amount (to the nearest dollar)"
+                      placeholder="To"
+                      min="0"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Rating -->
+              <div class="pt-5">
+                <h3 class="fs-5 mb-1">Rating</h3>
+                <!-- 5 -->
+                <div
+                  class="d-flex ut-cursor-pointer text-secondary shop-text-option ut-w-max-content"
+                >
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <!-- 4 -->
+                <div
+                  class="d-flex gap-2 ut-cursor-pointer text-secondary shop-text-option ut-w-max-content"
+                >
+                  <div class="d-flex">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <p class="text-secondary">And Up</p>
+                </div>
+                <!-- 3 -->
+                <div
+                  class="d-flex gap-2 ut-cursor-pointer text-secondary shop-text-option w-fit-content"
+                >
+                  <div class="d-flex">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <p class="text-secondary">And Up</p>
+                </div>
+                <!-- 2 -->
+                <div
+                  class="d-flex gap-2 ut-cursor-pointer text-secondary shop-text-option w-fit-content"
+                >
+                  <div class="d-flex">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <p class="text-secondary">And Up</p>
+                </div>
+                <!-- 1 -->
+                <div
+                  class="d-flex gap-2 ut-cursor-pointer text-secondary shop-text-option w-fit-content"
+                >
+                  <div class="d-flex">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <p class="text-secondary">And Up</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="shop-items py-4 px-md-4 py-md-5">
+            <!--  -->
+            <div class="d-none d-xl-flex w-100 justify-content-between">
+              <p class="fs-6">Product: 128 items</p>
+
+              <div class="d-flex gap-1 gap-sm-2">
+                <label for="cars" class="d-block fs-6">Sort by </label>
+                <select
+                  name="sortBy"
+                  id="sortBy"
+                  class="ut-cursor-pointer fs-6"
+                >
+                  <option value="featured">Featured</option>
+                  <option value="best_selling">Best selling</option>
+                  <option value="created_ascending">Old to new</option>
+                  <option value="created_descending">New to old</option>
+                  <option value="price_ascending">Price, lowest first</option>
+                  <option value="price_descending">Price, highest first</option>
+                  <option value="title_ascending">Product, A-Z</option>
+                  <option value="title_descending">Product, Z-A</option>
+                </select>
+              </div>
+            </div>
+
+            <!--  -->
+
+            <div class="mt-5 shop-grid shop-grid-col fs-6">
+              <!-- card 1 -->
+              <div class="card h-100 ut-cursor-pointer shop-card">
+                <div class="overflow-hidden shop-card-img-container h-75">
+                  <img
+                    src="../../public/images/books/book1.jpg"
+                    class="card-img-top h-100 shop-animation-img-item"
+                    alt="..."
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body h-25">
+                  <h5 class="card-title ut-line-clamp-2">Spare</h5>
+                  <div class="card-text d-flex justify-content-between">
+                    <small class="text-muted text-center">₱667.95 </small>
+
+                    <div class="d-flex gap-1">
+                      <div class="hover-scale-110">
+                        <i class="bi bi-bag-plus"></i>
+                      </div>
+                      <div class="hover-scale-110">
+                        <i class="bi bi-suit-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 2 -->
+              <div class="card h-100 ut-cursor-pointer shop-card">
+                <div class="overflow-hidden shop-card-img-container h-75">
+                  <img
+                    src="../../public/images/books/book2.jpg"
+                    class="card-img-top h-100 shop-animation-img-item"
+                    alt="..."
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body h-25">
+                  <h5 class="card-title ut-line-clamp-2">
+                    The Creative Act: A Way of Being
+                  </h5>
+                  <div class="card-text d-flex justify-content-between">
+                    <small class="text-muted text-center">₱667.95 </small>
+
+                    <div class="d-flex gap-1">
+                      <div class="hover-scale-110">
+                        <i class="bi bi-bag-plus"></i>
+                      </div>
+                      <div class="hover-scale-110">
+                        <i class="bi bi-suit-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div class="card h-100 ut-cursor-pointer shop-card">
+                <div class="overflow-hidden shop-card-img-container h-75">
+                  <img
+                    src="../../public/images/books/book3.jpg"
+                    class="card-img-top h-100 shop-animation-img-item"
+                    alt="..."
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body h-25">
+                  <h5 class="card-title ut-line-clamp-2">
+                    My Thoughts on how to be better each and every day
+                  </h5>
+                  <div class="card-text d-flex justify-content-between">
+                    <small class="text-muted text-center">₱667.95 </small>
+
+                    <div class="d-flex gap-1">
+                      <div class="hover-scale-110">
+                        <i class="bi bi-bag-plus"></i>
+                      </div>
+                      <div class="hover-scale-110">
+                        <i class="bi bi-suit-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div class="card h-100 ut-cursor-pointer shop-card">
+                <div class="overflow-hidden shop-card-img-container h-75">
+                  <img
+                    src="../../public/images/books/book4.jpg"
+                    class="card-img-top h-100 shop-animation-img-item"
+                    alt="..."
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body h-25">
+                  <h5 class="card-title ut-line-clamp-2">
+                    It Starts with Us: A Novel (It Ends with Us)
+                  </h5>
+                  <div class="card-text d-flex justify-content-between">
+                    <small class="text-muted text-center">₱667.95 </small>
+
+                    <div class="d-flex gap-1">
+                      <div class="hover-scale-110">
+                        <i class="bi bi-bag-plus"></i>
+                      </div>
+                      <div class="hover-scale-110">
+                        <i class="bi bi-suit-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 5 -->
+              <div class="card h-100 ut-cursor-pointer shop-card">
+                <div class="overflow-hidden shop-card-img-container h-75">
+                  <img
+                    src="../../public/images/books/book5.jpg"
+                    class="card-img-top h-100 shop-animation-img-item"
+                    alt="..."
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body h-25">
+                  <h5 class="card-title ut-line-clamp-2">
+                    It Starts with Us: A Novel (It Ends with Us)
+                  </h5>
+                  <div class="card-text d-flex justify-content-between">
+                    <small class="text-muted text-center">₱667.95 </small>
+
+                    <div class="d-flex gap-1">
+                      <div class="hover-scale-110">
+                        <i class="bi bi-bag-plus"></i>
+                      </div>
+                      <div class="hover-scale-110">
+                        <i class="bi bi-suit-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 6 -->
+              <div class="card h-100 ut-cursor-pointer shop-card">
+                <div class="overflow-hidden shop-card-img-container h-75">
+                  <img
+                    src="../../public/images/books/book6.jpg"
+                    class="card-img-top h-100 shop-animation-img-item"
+                    alt="..."
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body h-25">
+                  <h5 class="card-title ut-line-clamp-2">
+                    It Ends with Us: A Novel
+                  </h5>
+                  <div class="card-text d-flex justify-content-between">
+                    <small class="text-muted text-center">₱667.95 </small>
+
+                    <div class="d-flex gap-1">
+                      <div class="hover-scale-110">
+                        <i class="bi bi-bag-plus"></i>
+                      </div>
+                      <div class="hover-scale-110">
+                        <i class="bi bi-suit-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 7 -->
+              <div class="card h-100 ut-cursor-pointer shop-card">
+                <div class="overflow-hidden shop-card-img-container h-75">
+                  <img
+                    src="../../public/images/books/book7.jpg"
+                    class="card-img-top h-100 shop-animation-img-item"
+                    alt="..."
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body h-25">
+                  <h5 class="card-title ut-line-clamp-2">Verity</h5>
+                  <div class="card-text d-flex justify-content-between">
+                    <small class="text-muted text-center">₱667.95 </small>
+
+                    <div class="d-flex gap-1">
+                      <div class="hover-scale-110">
+                        <i class="bi bi-bag-plus"></i>
+                      </div>
+                      <div class="hover-scale-110">
+                        <i class="bi bi-suit-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 8 -->
+              <div class="card h-100 ut-cursor-pointer shop-card">
+                <div class="overflow-hidden shop-card-img-container h-75">
+                  <img
+                    src="../../public/images/books/book8.jpg"
+                    class="card-img-top h-100 shop-animation-img-item"
+                    alt="..."
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body h-25">
+                  <h5 class="card-title ut-line-clamp-2">
+                    Lessons in Chemistry: A Novel
+                  </h5>
+                  <div class="card-text d-flex justify-content-between">
+                    <small class="text-muted text-center">₱667.95 </small>
+
+                    <div class="d-flex gap-1">
+                      <div class="hover-scale-110">
+                        <i class="bi bi-bag-plus"></i>
+                      </div>
+                      <div class="hover-scale-110">
+                        <i class="bi bi-suit-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 9 -->
+              <div class="card h-100 ut-cursor-pointer shop-card">
+                <div class="overflow-hidden shop-card-img-container h-75">
+                  <img
+                    src="../../public/images/books/book9.jpg"
+                    class="card-img-top h-100 shop-animation-img-item"
+                    alt="..."
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body h-25">
+                  <h5 class="card-title ut-line-clamp-2">
+                    Straight Shooter: A Memoir of Second Chances and First Takes
+                  </h5>
+                  <div class="card-text d-flex justify-content-between">
+                    <small class="text-muted text-center">₱667.95 </small>
+
+                    <div class="d-flex gap-1">
+                      <div class="hover-scale-110">
+                        <i class="bi bi-bag-plus"></i>
+                      </div>
+                      <div class="hover-scale-110">
+                        <i class="bi bi-suit-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 10 -->
+              <div class="card h-100 ut-cursor-pointer shop-card">
+                <div class="overflow-hidden shop-card-img-container h-75">
+                  <img
+                    src="../../public/images/books/book10.jpg"
+                    class="card-img-top h-100 shop-animation-img-item"
+                    alt="..."
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body h-25">
+                  <h5 class="card-title ut-line-clamp-2">
+                    The Body Keeps the Score: Brain, Mind, and Body in the
+                    Healing of Trauma
+                  </h5>
+                  <div class="card-text d-flex justify-content-between">
+                    <small class="text-muted text-center">₱667.95 </small>
+
+                    <div class="d-flex gap-1">
+                      <div class="hover-scale-110">
+                        <i class="bi bi-bag-plus"></i>
+                      </div>
+                      <div class="hover-scale-110">
+                        <i class="bi bi-suit-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 11 -->
+              <div class="card h-100 ut-cursor-pointer shop-card">
+                <div class="overflow-hidden shop-card-img-container h-75">
+                  <img
+                    src="../../public/images/books/book11.jpg"
+                    class="card-img-top h-100 shop-animation-img-item"
+                    alt="..."
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body h-25">
+                  <h5 class="card-title ut-line-clamp-2">
+                    Becoming Free Indeed: My Story of Disentangling Faith from
+                    Fear
+                  </h5>
+                  <div class="card-text d-flex justify-content-between">
+                    <small class="text-muted text-center">₱667.95 </small>
+
+                    <div class="d-flex gap-1">
+                      <div class="hover-scale-110">
+                        <i class="bi bi-bag-plus"></i>
+                      </div>
+                      <div class="hover-scale-110">
+                        <i class="bi bi-suit-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 12 -->
+              <div class="card h-100 ut-cursor-pointer shop-card">
+                <div class="overflow-hidden shop-card-img-container h-75">
+                  <img
+                    src="../../public/images/books/book12.jpg"
+                    class="card-img-top h-100 shop-animation-img-item"
+                    alt="..."
+                    style="object-fit: cover"
+                  />
+                </div>
+                <div class="card-body h-25">
+                  <h5 class="card-title ut-line-clamp-2">
+                    The 48 Laws of Power
+                  </h5>
+                  <div class="card-text d-flex justify-content-between">
+                    <small class="text-muted text-center">₱667.95 </small>
+
+                    <div class="d-flex gap-1">
+                      <div class="hover-scale-110">
+                        <i class="bi bi-bag-plus"></i>
+                      </div>
+                      <div class="hover-scale-110">
+                        <i class="bi bi-suit-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--  -->
+            </div>
+
+            <!-- its not dynamic so its just fixed UI -->
+            <!-- navigation -->
+            <div
+              class="d-flex justify-content-between mt-5 ut-bg-white-paper p-2 fs-6 custom-radius-lg"
+            >
+              <!-- 1 -->
+              <div class="gap-0 shop-gap-result gap-md-2 shop-navigation">
+                <div
+                  class="ut-cursor-pointer text-center shop-navigation-btn p-1"
+                >
+                  <i class="bi bi-caret-left-fill"></i>
+                </div>
+                <div
+                  class="ut-cursor-pointer text-center shop-navigation-btn p-1"
+                >
+                  1
+                </div>
+                <div
+                  class="ut-cursor-pointer text-center shop-navigation-btn p-1"
+                >
+                  2
+                </div>
+                <div
+                  class="ut-cursor-pointer text-center shop-navigation-btn p-1"
+                >
+                  3
+                </div>
+                <div class="text-center" style="line-height: 2.2">...</div>
+                <div
+                  class="ut-cursor-pointer text-center shop-navigation-btn p-1"
+                >
+                  43
+                </div>
+                <div
+                  class="ut-cursor-pointer text-center shop-navigation-btn p-1"
+                >
+                  <i class="bi bi-caret-right-fill"></i>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="d-flex align-items-center">
+                <p class="shop-display-result">Result: 1 - 12 of 128</p>
+                <p class="shop-display-result-sm">128 items</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="bg-black d-flex flex-column position-relative ut-text-sm">
       <!--  -->
       <div

@@ -1,1 +1,114 @@
 /* please start with naming shop- */
+
+.shop-w-30 {
+  width: 30%;
+}
+.shop-options-border {
+  border: solid 1px #eae8e734;
+}
+
+.shop-items {
+  width: 100%;
+}
+
+@media (mw-fit-content-width: 1200px) {
+  .shop-item {
+    width: 70%;
+  }
+}
+
+.shop-grid {
+  display: grid;
+  width: 100%;
+}
+
+.shop-grid-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+@media (min-width: 768px) {
+  .shop-grid-col {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .shop-grid-col {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .shop-grid-col {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+/* card */
+
+/* option left hover */
+.shop-text-option:hover {
+  color: #3c3f42 !important;
+  /* color: red !important; */
+}
+
+.shop-text-option:hover p {
+  color: #3c3f42 !important;
+}
+.shop-card {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.shop-card:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.shop-card-img-container {
+  border: 1px solid rgb(34, 34, 34);
+  border-radius: 0.375rem;
+}
+
+.shop-animation-img-item {
+  transition: transform 0.9s ease;
+}
+
+.shop-card:hover .shop-animation-img-item {
+  transform: scale(1.1);
+}
+
+.shop-card:hover .card-title {
+  text-decoration: underline;
+}
+
+.shop-navigation-btn:hover {
+  background-color: #523a1d;
+  color: white;
+}
+
+/* display galaxy fold */
+.shop-display-result {
+  display: none;
+}
+.shop-display-result-sm {
+  display: block;
+}
+
+/* media */
+@media (min-width: 419px) {
+  .shop-display-result {
+    display: block;
+  }
+  .shop-gap-result {
+    gap: 0.25rem !important;
+  }
+  .shop-display-result-sm {
+    display: none;
+  }
+}
+/* custom-navigation */
+.shop-navigation {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
