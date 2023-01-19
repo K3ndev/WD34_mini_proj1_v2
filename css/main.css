@@ -17,6 +17,7 @@
 
 /* pages */
 @import url("./page/home.css");
+@import url("./page/contact.css");
 
 /* reset */
 @import url("./base/reset.css");

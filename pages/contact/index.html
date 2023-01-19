@@ -136,7 +136,156 @@
         </div>
       </nav>
     </header>
-    <main>contact</main>
+    <main>
+      <section class="container-xl mt-5">
+        <div class="d-flex justify-content-center mb-5">
+          <div class="text-center">
+            <h2 class="ut-text-3xl ut-text-lg-4xl fw-semibold">
+              We've been waiting
+            </h2>
+            <h2 class="ut-text-3xl ut-text-lg-4xl fw-semibold mb-3 mb-lg-4">
+              for you.
+            </h2>
+            <p class="ut-text-sm ut-text-lg-base">
+              We want to hear from you. Let us know how we can help.
+            </p>
+          </div>
+        </div>
+        <div
+          class="contact-form-card mx-auto d-flex flex-column flex-lg-row custom-radius-lg position-relative ut-mb-8 ut-box-shadow-xl"
+          style="border: 1px solid black"
+        >
+          <div class="contact-form-img" style="height: 200px">
+            <img
+              src="../../public/images/bg_contact.webp"
+              alt=""
+              class="w-100 h-100"
+              style="object-fit: cover"
+            />
+          </div>
+          <div class="ut-bg-neutral-brown contact-form-input p-3">
+            <div style="border: 2px solid #423c3c" class="p-4 h-100">
+              <h3 class="mb-4 mb-lg-3 text-white fs-1 font-playfair">
+                Contact Us Today
+              </h3>
+              <p class="mb-3 mb-lg-4 text-white">
+                If you have any queries, feel free to send us a message. You can
+                also visit our physical store located in the ad_dress and talk
+                to us in person.
+              </p>
+
+              <div class="d-flex w-100 gap-2 gap-lg-3 mb-2 mb-lg-3">
+                <label for="name" class="w-50">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    name="name"
+                    class="w-100 p-1 custom-radius-lg"
+                  />
+                </label>
+                <label for="email" class="w-50">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    class="w-100 p-1 custom-radius-lg"
+                  />
+                </label>
+              </div>
+              <textarea
+                name="message"
+                rows="10"
+                class="w-100 contact-disable-text-area mb-2 mb-lg-3 p-1 custom-radius-lg"
+                placeholder="Your message"
+              ></textarea>
+              <label for="addreas" class="w-100 mb-4 mb-lg-4">
+                <input
+                  type="text"
+                  class="w-100 p-1 custom-radius-lg"
+                  placeholder="Addreas"
+                />
+              </label>
+              <div
+                class="w-100 d-flex justify-content-center justify-content-lg-end"
+              >
+                <button
+                  class="custom-btn-high custom-radius-lg px-5 py-2 px-lg-4"
+                >
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="d-lg-block position-absolute ut-z-index-10 p-3 ut-bg-dark-brown custom-radius-lg text-light ut-box-shadow-lg contact-social"
+          >
+            <div>
+              <h3 class="mb-1 ut-text-base">Follow Us</h3>
+              <div class="d-flex gap-2 ut-text-sm flex-wrap">
+                <a
+                  class="d-none d-lg-block ut-cursor-pointer text-white ut-hover-underline ut-hover-scale-11"
+                  >Twitter</a
+                >
+                <i
+                  class="d-lg-none bi bi-twitter ut-hover-scale-12 ut-cursor-pointer me-2"
+                ></i>
+                <span>•</span>
+                <a
+                  class="d-none d-lg-block ut-cursor-pointer text-white ut-hover-underline ut-hover-scale-11"
+                  >Facebook</a
+                >
+                <i
+                  class="d-lg-none bi bi-facebook ut-hover-scale-12 ut-cursor-pointer me-2"
+                ></i>
+                <span>•</span>
+                <a
+                  class="d-none d-lg-block ut-cursor-pointer text-white ut-hover-underline ut-hover-scale-11"
+                  >Tiktok</a
+                >
+                <i
+                  class="d-lg-none bi bi-tiktok ut-hover-scale-12 ut-cursor-pointer me-2"
+                ></i>
+                <span>•</span>
+                <a
+                  class="d-none d-lg-block ut-cursor-pointer text-white ut-hover-underline ut-hover-scale-11"
+                  >Instagram</a
+                >
+                <i
+                  class="d-lg-none bi bi-instagram ut-hover-scale-12 ut-cursor-pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-xl ut-mb-10 text-black">
+        <div class="ut-box-shadow-lg">
+          <div class="ut-bg-neutral-brown-light p-4 p-lg-4">
+            <div
+              class="d-flex w-100 justify-content-between flex-column flex-md-row align-items-center"
+            >
+              <div
+                class="d-flex gap-3 align-items-center justify-content-center mb-3 mb-lg-0"
+              >
+                <i class="bi bi-envelope-at ut-text-2xl ut-text-lg-3xl"></i>
+                <div class="ut-text-lg ut-text-lg-xl">
+                  <h3>Join the newsletter and read</h3>
+                  <h3>the new posts first.</h3>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex gap-2 justify-content-center">
+                  <input type="email" placeholder="Email" class="p-1" />
+                  <button class="custom-btn-low px-4 py-2">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="bg-black d-flex flex-column position-relative ut-text-sm">
       <!--  -->
       <div
@@ -153,34 +302,34 @@
             <div class="d-flex gap-2 flex-column">
               <a
                 href="../shop/index.html"
-                class="text-decoration-none ut-text-shadow-white ut-text-shadow-white-hover text-decoration-underline d-block"
+                class="text-decoration-none ut-text-shadow-white ut-text-shadow-white-hover text-decoration-underline d-block ut-w-max-content"
                 >Shop</a
               >
               <a
                 href="#"
-                class="text-decoration-none ut-text-shadow-white ut-text-shadow-white-hover text-decoration-underline d-block"
+                class="text-decoration-none ut-text-shadow-white ut-text-shadow-white-hover text-decoration-underline d-block ut-w-max-content"
                 >FAQs</a
               >
               <a
                 href="#"
-                class="text-decoration-none ut-text-shadow-white ut-text-shadow-white-hover text-decoration-underline d-block"
+                class="text-decoration-none ut-text-shadow-white ut-text-shadow-white-hover text-decoration-underline d-block ut-w-max-content"
                 >Help Center</a
               >
             </div>
             <div class="d-flex gap-2 flex-column">
               <a
                 href="#"
-                class="text-decoration-none ut-text-shadow-white ut-text-shadow-white-hover text-decoration-underline d-block"
+                class="text-decoration-none ut-text-shadow-white ut-text-shadow-white-hover text-decoration-underline d-block ut-w-max-content"
                 >Privacy Policy
               </a>
               <a
                 href="#"
-                class="text-decoration-none ut-text-shadow-white ut-text-shadow-white-hover text-decoration-underline d-block"
+                class="text-decoration-none ut-text-shadow-white ut-text-shadow-white-hover text-decoration-underline d-block ut-w-max-content"
                 >Terms of Service
               </a>
               <a
                 href="#"
-                class="text-decoration-none ut-text-shadow-white ut-text-shadow-white-hover text-decoration-underline d-block"
+                class="text-decoration-none ut-text-shadow-white ut-text-shadow-white-hover text-decoration-underline d-block ut-w-max-content"
                 >Refund policy
               </a>
             </div>
@@ -277,7 +426,7 @@
 
       <div class="text-center px-3 py-4 footer-border-top custom-text-xs">
         <div class="container-xl">
-          <p>Copyright &copy; 2022 All rights reserved.</p>
+          <p>Build by Company X ©2022</p>
         </div>
       </div>
     </footer>
@@ -286,3 +435,6 @@
     <script src="../../css/vendor/bootstrap/js/bootstrap.bundle.js"></script>
   </body>
 </html>
+
+<!-- https://dribbble.com/shots/14344239-Contact-Form-Beach-Houses -->
+<!-- https://dribbble.com/shots/15519995-Personal-Blog-Template-Other-Pages -->
