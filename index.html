@@ -16,10 +16,18 @@
       href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/openmoji/338/open-book_1f4d6.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Deja Book • Store for everyone</title>
   </head>
   <body>
     <header class="border-bottom">
+      <!-- announcement -->
+      <div class="bg-black">
+        <p class="text-white text-center py-2 ut-text-sm">
+          Free Shipping for purchases with a minimum of PHP 999 | WE SHIP ONLY
+          IN THE PHILIPPINES
+        </p>
+      </div>
       <!-- nav -->
       <nav class="navbar navbar-expand-md container-xl">
         <div class="container-xl">
@@ -129,10 +137,327 @@
         </div>
       </nav>
     </header>
-    <main>main</main>
-    <footer
-      class="bg-black d-flex d-xl-none flex-column position-relative ut-text-sm"
-    >
+    <main>
+      <!-- hero -->
+      <section class="w-100 home-container-hero position-relative text-center">
+        <img
+          src="./public/images/model.jpg"
+          alt=""
+          style="object-fit: cover"
+          class="w-100 h-100"
+        />
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          class="position-absolute bg-white home-container-message p-2 p-md-3 p-lg-4 ut-box-shadow-xl"
+        >
+          <h1
+            class="font-playfair ut-text-xl ut-text-md-3xl ut-text-lg-4xl mb-1 mb-md-3 mb-lg-4"
+          >
+            Captivating Inspiring Tale
+          </h1>
+          <p class="ut-text-sm ut-text-lg-base mb-1 mb-md-2">
+            Get lost in the written word and explore at DejaBook.
+          </p>
+          <button class="custom-btn-high home-button-shop ut-cursor-pointer">
+            Shop Now
+          </button>
+        </div>
+      </section>
+
+      <section class="container-xl text-center ut-text-shadow-white ut-mb-10">
+        <h2 class="ut-text-sm ut-text-md-base ut-text-lg-lg mb-3">
+          As featured in
+        </h2>
+
+        <div class="w-100 d-flex">
+          <div
+            class="d-flex w-100 flex-column flex-md-row justify-content-evenly"
+          >
+            <p class="ut-text-xl ut-text-md-2xl ut-text-lg-3xl">
+              BusinessWorld
+            </p>
+            <p class="ut-text-xl ut-text-md-2xl ut-text-lg-3xl">BizNewsAsia</p>
+          </div>
+          <div
+            class="d-flex w-100 flex-column flex-md-row justify-content-evenly"
+          >
+            <p class="ut-text-xl ut-text-md-2xl ut-text-lg-3xl">AsiaTrend</p>
+            <p class="ut-text-xl ut-text-md-2xl ut-text-lg-3xl">Forbes</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="container-xl ut-mb-10 px-3 px-md-4 px-lg-5"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <h2
+          class="ut-text-xl ut-text-md-2xl ut-text-lg-3xl mb-4 mb-md-5 text-center"
+        >
+          Popular Books!
+        </h2>
+
+        <!-- card -->
+        <div class="home-grid-col fs-6 gap-2 gap-md-3">
+          <!-- card 1 -->
+          <div class="card h-100 ut-cursor-pointer home-card">
+            <div class="overflow-hidden home-card-img-container">
+              <img
+                src="../../public/images/books/book1.webp"
+                class="card-img-top h-100 home-animation-img-item"
+                alt="..."
+                style="object-fit: cover"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title ut-line-clamp-2">Spare</h5>
+              <div class="card-text d-flex justify-content-between">
+                <small class="text-muted text-center">₱667.95 </small>
+                <div class="d-flex gap-1">
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-bag-plus"></i>
+                  </div>
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-suit-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="card h-100 ut-cursor-pointer home-card">
+            <div class="overflow-hidden home-card-img-container">
+              <img
+                src="../../public/images/books/book2.webp"
+                class="card-img-top h-100 home-animation-img-item"
+                alt="..."
+                style="object-fit: cover"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title ut-line-clamp-2 mb-auto">
+                The Creative Act: A Way of Being
+              </h5>
+              <div class="card-text d-flex justify-content-between">
+                <small class="text-muted text-center">₱667.95 </small>
+
+                <div class="d-flex gap-1">
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-bag-plus"></i>
+                  </div>
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-suit-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="card h-100 ut-cursor-pointer home-card">
+            <div class="overflow-hidden home-card-img-container">
+              <img
+                src="../../public/images/books/book3.webp"
+                class="card-img-top h-100 home-animation-img-item"
+                alt="..."
+                style="object-fit: cover"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title ut-line-clamp-2">
+                My Thoughts on how to be better each and every day
+              </h5>
+              <div class="card-text d-flex justify-content-between">
+                <small class="text-muted text-center">₱667.95 </small>
+
+                <div class="d-flex gap-1">
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-bag-plus"></i>
+                  </div>
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-suit-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 4 -->
+          <div class="card h-100 ut-cursor-pointer home-card">
+            <div class="overflow-hidden home-card-img-container">
+              <img
+                src="../../public/images/books/book4.webp"
+                class="card-img-top h-100 home-animation-img-item"
+                alt="..."
+                style="object-fit: cover"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title ut-line-clamp-2">
+                It Starts with Us: A Novel (It Ends with Us)
+              </h5>
+              <div class="card-text d-flex justify-content-between">
+                <small class="text-muted text-center">₱667.95 </small>
+
+                <div class="d-flex gap-1">
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-bag-plus"></i>
+                  </div>
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-suit-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 5 -->
+          <div class="card h-100 ut-cursor-pointer home-card">
+            <div class="overflow-hidden home-card-img-container">
+              <img
+                src="../../public/images/books/book5.webp"
+                class="card-img-top h-100 home-animation-img-item"
+                alt="..."
+                style="object-fit: cover"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title ut-line-clamp-2">
+                It Starts with Us: A Novel (It Ends with Us)
+              </h5>
+              <div class="card-text d-flex justify-content-between">
+                <small class="text-muted text-center">₱667.95 </small>
+
+                <div class="d-flex gap-1">
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-bag-plus"></i>
+                  </div>
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-suit-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 6 -->
+          <div class="card h-100 ut-cursor-pointer home-card">
+            <div class="overflow-hidden home-card-img-container">
+              <img
+                src="../../public/images/books/book6.webp"
+                class="card-img-top h-100 home-animation-img-item"
+                alt="..."
+                style="object-fit: cover"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title ut-line-clamp-2">
+                It Ends with Us: A Novel
+              </h5>
+              <div class="card-text d-flex justify-content-between">
+                <small class="text-muted text-center">₱667.95 </small>
+
+                <div class="d-flex gap-1">
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-bag-plus"></i>
+                  </div>
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-suit-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 7 -->
+          <div class="card h-100 ut-cursor-pointer home-card d-none d-lg-block">
+            <div class="overflow-hidden home-card-img-container">
+              <img
+                src="../../public/images/books/book7.webp"
+                class="card-img-top h-100 home-animation-img-item"
+                alt="..."
+                style="object-fit: cover"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title ut-line-clamp-2">Verity</h5>
+              <div class="card-text d-flex justify-content-between">
+                <small class="text-muted text-center">₱667.95 </small>
+
+                <div class="d-flex gap-1">
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-bag-plus"></i>
+                  </div>
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-suit-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 8 -->
+          <div class="card h-100 ut-cursor-pointer home-card d-none d-lg-block">
+            <div class="overflow-hidden home-card-img-container">
+              <img
+                src="../../public/images/books/book8.webp"
+                class="card-img-top h-100 home-animation-img-item"
+                alt="..."
+                style="object-fit: cover"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title ut-line-clamp-2">
+                Lessons in Chemistry: A Novel
+              </h5>
+              <div class="card-text d-flex justify-content-between">
+                <small class="text-muted text-center">₱667.95 </small>
+
+                <div class="d-flex gap-1">
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-bag-plus"></i>
+                  </div>
+                  <div class="ut-hover-scale-12">
+                    <i class="bi bi-suit-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-xl ut-mb-10 px-4 px-lg-5">
+        <div
+          class="d-flex flex-column flex-lg-row home-customer-height custom-radius-lg"
+          style="border: 1px black solid"
+        >
+          <div class="bg-primary w-100">
+            <img
+              src="./public/images/blaz-photo-zMRLZh40kms-unsplash.jpg"
+              alt=""
+              style="object-fit: cover"
+              class="w-100 h-100"
+            />
+          </div>
+          <div class="w-100 ut-bg-neutral-brown home-customer-body">
+            <h2 class="ut-text-lg ut-text-md-2xl mb-1 mb-md-3 mb-lg-4">
+              Become a loyal customer!
+            </h2>
+            <p class="ut-text-base ut-text-md-lg mb-1 mb-md-2 mb-lg-4">
+              Sign up for our rewards program and earn points to purchase more
+              books! Refer friends, make purchases, and follow us on social
+              media to accumulate more points!
+            </p>
+            <button class="custom-btn-high py-2 px-3">Join Us</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black d-flex flex-column position-relative ut-text-sm">
       <!--  -->
       <div
         class="container-xl py-5 d-flex justify-content-md-evenly flex-column flex-md-row gap-5"
@@ -279,5 +604,9 @@
 
     <!-- bootstrap -->
     <script src="./css/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
