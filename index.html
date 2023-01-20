@@ -16,7 +16,7 @@
       href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/openmoji/338/open-book_1f4d6.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <title>Deja Book • Store for everyone</title>
   </head>
   <body>
@@ -379,7 +379,9 @@
                 src="./public/images/books/book7.webp"
                 class="card-img-top h-100 home-animation-img-item"
                 alt="..."
-                style="object-fit: cover"
+                <script>
+      AOS.init();
+    </script>style="object-fit: cover"
               />
             </div>
             <div class="card-body">
@@ -604,9 +606,9 @@
 
     <!-- bootstrap -->
     <script src="./css/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <!-- <script>
       AOS.init();
-    </script>
+    </script> -->
   </body>
 </html>
