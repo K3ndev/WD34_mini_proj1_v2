@@ -68,6 +68,69 @@
 .shop-card-img-container {
   border: 1px solid rgb(34, 34, 34);
   border-radius: 0.375rem;
+
+  height: 70%;
+}
+.card-body {
+  height: 30%;
+}
+
+@media (min-width: 512px) {
+  .shop-card-img-container {
+    height: 73%;
+  }
+  .card-body {
+    height: 27%;
+  }
+}
+@media (min-width: 576px) {
+  .shop-card-img-container {
+    height: 75%;
+  }
+  .card-body {
+    height: 25%;
+  }
+}
+@media (min-width: 594px) {
+  .shop-card-img-container {
+    height: 77%;
+  }
+  .card-body {
+    height: 23%;
+  }
+}
+@media (min-width: 650px) {
+  .shop-card-img-container {
+    height: 80%;
+  }
+  .card-body {
+    height: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .shop-card-img-container {
+    height: 70%;
+  }
+  .card-body {
+    height: 30%;
+  }
+}
+@media (min-width: 855px) {
+  .shop-card-img-container {
+    height: 75%;
+  }
+  .card-body {
+    height: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .shop-card-img-container {
+    height: 70%;
+  }
+  .card-body {
+    height: 30%;
+  }
 }
 
 .shop-animation-img-item {
@@ -111,4 +174,11 @@
 .shop-navigation {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+/* to make them between inside of the card-body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
